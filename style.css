@@ -1,0 +1,69 @@
+
+body {
+  background-color: lightblue;
+}
+
+.title-div {
+  background:red;
+  min-height: 20vh;
+}
+.game-div {
+  background:green;
+  height: 65vh;
+  width: 80vh;
+}
+.bottom-div {
+  background:blue;
+  min-height: 15vh;
+}
+
+div.game-div div.row {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  height: 33.333%;
+  margin:0px;
+  padding: 0px;
+}
+
+div.game-div div.row  div{
+  border: 1px solid black;
+}
+@keyframes changesOpacityX {
+  from {
+    opacity:0.9;
+  }
+
+  to {
+    opacity:0;
+  }
+}
+@keyframes changesOpacityO {
+  from {
+    opacity:0;
+  }
+
+  to {
+    opacity:0.9;
+  }
+}
+
+div.game-div div.row img.bottom{
+    filter: brightness(70%);
+    position: absolute;
+    cursor: pointer;
+    animation-duration: 1.8s;
+   animation-name: changesOpacityX;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+
+div.game-div div.row img.top{
+  filter: brightness(70%);
+    position: absolute;
+    cursor: pointer;
+    animation-duration: 1.8s;
+   animation-name: changesOpacityO;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
