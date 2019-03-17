@@ -1,6 +1,7 @@
 
-body {
-  background-color: lightblue;
+html, body {
+
+    overflow-x: hidden;
 }
 
 .title-div {
@@ -10,7 +11,7 @@ body {
 .game-div {
   background:green;
   height: 65vh;
-  width: 80vh;
+  width: 70vh;
 }
 .bottom-div {
   background:blue;
@@ -28,6 +29,7 @@ div.game-div div.row {
 
 div.game-div div.row  div{
   border: 1px solid black;
+
 }
 @keyframes changesOpacityX {
   from {
@@ -48,7 +50,7 @@ div.game-div div.row  div{
   }
 }
 
-div.game-div div.row img.bottom{
+div.game-div div.row img.x{
     filter: brightness(70%);
     position: absolute;
     cursor: pointer;
@@ -58,7 +60,7 @@ div.game-div div.row img.bottom{
    animation-direction: alternate;
 }
 
-div.game-div div.row img.top{
+div.game-div div.row img.o{
   filter: brightness(70%);
     position: absolute;
     cursor: pointer;
@@ -66,4 +68,18 @@ div.game-div div.row img.top{
    animation-name: changesOpacityO;
    animation-iteration-count: infinite;
    animation-direction: alternate;
+}
+
+.choosen{
+    opacity:1;
+    position: absolute;
+}
+
+.not-choosen{
+    opacity:0;
+}
+
+
+div#gameDiv .row {
+  display:none;
 }

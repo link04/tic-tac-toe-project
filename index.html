@@ -13,49 +13,85 @@
         bottom div
       </div>
 
-      <div id="game-div" class="game-div mx-auto" style="padding:0px;">
-        <div class="row">
+      <div class="  row align-items-center">
+        <div id="actualPlayer" hidden class="col-sm text-center " >
+
           <div class="col-sm">
-            <img class="bottom" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
-            <img class="top" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
+            <h2>Actual Player is </h2>
+            <img class="x" id="x" hidden style="max-width:90%;max-height:90%;"  src="x-icon.png" />
+            <img class="o" id="o" hidden style="max-width:90%;max-height:90%;"  src="o-icon.png" />
           </div>
-          <div class="col-sm" >
-            <img class="bottom" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
-            <img class="top" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
-          </div>
-          <div class="col-sm" >
-            <img class="bottom" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
-            <img class="top" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
-          </div>
+
         </div>
-        <div class="row">
-          <div class="col-sm">
-            <img class="bottom" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
-            <img class="top" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
+
+        <div id="gameDiv" class="game-div mx-auto " style="padding:0px;">
+          <div class="container text-center" id="form-div">
+            <form class="form" id="myForm"  method="post">
+              <h2>Choose Letter</h2>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="xName">X</label>
+                  <input type="text" class="form-control" id="xName" placeholder="X Name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="oName">O</label>
+                  <input type="text" class="form-control" id="oName" placeholder="O Name" required>
+                </div>
+              </div>
+              <input type="submit" class="btn btn-primary" value="Begin!">
+
+            </form>
           </div>
-          <div class="col-sm" >
-            <img class="bottom" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
-            <img class="top" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
-          </div>
-          <div class="col-sm" >
-            <img class="bottom" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
-            <img class="top" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
-          </div>
+
+            <div class="row" >
+              <div id="a0" class="col-sm">
+                <img class="x" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
+                <img class="o" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
+              </div>
+              <div id="a1" class="col-sm" >
+                <img class="x" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
+                <img class="o" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
+              </div>
+              <div id="a2" class="col-sm" >
+                <img class="x" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
+                <img class="o" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
+              </div>
+            </div>
+            <div class="row" >
+              <div id="b0" class="col-sm">
+                <img class="x" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
+                <img class="o" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
+              </div>
+              <div id="b1" class="col-sm" >
+                <img class="x" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
+                <img class="o" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
+              </div>
+              <div id="b2" class="col-sm" >
+                <img class="x" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
+                <img class="o" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
+              </div>
+            </div>
+            <div class="row" >
+              <div id="c0" class="col-sm">
+                <img class="x" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
+                <img class="o" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
+              </div>
+              <div id="c1" class="col-sm" >
+                <img class="x" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
+                <img class="o" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
+              </div>
+              <div id="c2" class="col-sm" >
+                <img class="x" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
+                <img class="o" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
+              </div>
+            </div>
+
         </div>
-        <div class="row">
-          <div class="col-sm">
-            <img class="bottom" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
-            <img class="top" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
-          </div>
-          <div class="col-sm" >
-            <img class="bottom" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
-            <img class="top" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
-          </div>
-          <div class="col-sm" >
-            <img class="bottom" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
-            <img class="top" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
-          </div>
+
+        <div id="playersScore" hidden  class="col-sm text-center" >
+          bottom div
         </div>
+
       </div>
 
       <div class="bottom-div text-center">
@@ -63,5 +99,7 @@
       </div>
 
   </body>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script type="text/javascript" src="index.js" ></script>
   <!-- <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script> -->
 </html>
