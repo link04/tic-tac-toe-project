@@ -59,37 +59,33 @@ div.game-div img {
   max-width:90%;
   max-height:90%;
   position: absolute;
- left: 50%;
- top: 50%;
- transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 div.game-div div.row img.x{
-    filter: brightness(70%);
-      z-index: 1;
-    cursor: pointer;
-    animation-duration: 1.8s;
-   animation-name: changesOpacityX;
-   animation-iteration-count: infinite;
-   animation-direction: alternate;
+  filter: brightness(70%);
+  z-index: 1;
+  cursor: pointer;
+  animation-duration: 1.8s;
+  animation-name: changesOpacityX;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 div.game-div div.row img.o{
   filter: brightness(70%);
   z-index: 3;
-    cursor: pointer;
-    animation-duration: 1.8s;
-   animation-name: changesOpacityO;
-   animation-iteration-count: infinite;
-   animation-direction: alternate;
+  cursor: pointer;
+  animation-duration: 1.8s;
+  animation-name: changesOpacityO;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .choosen{
-    opacity:1;
+  opacity:1;
   position: absolute;
-}
-
-.not-choosen{
-    opacity:0;
 }
 
 div#gameDiv .row {

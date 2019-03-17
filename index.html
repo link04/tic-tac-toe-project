@@ -52,53 +52,53 @@
 
             <div class="row" >
               <div id="a0" class="col tic-tac-toe">
-                <img class="x"   src="x-icon.png" />
-                <img class="o"   src="o-icon.png" />
+                <img class="x" name="x"  src="x-icon.png" />
+                <img class="o" name="o" src="o-icon.png" />
               </div>
               <div id="a1" class="col tic-tac-toe" >
-                <img class="x"   src="x-icon.png" />
-                <img class="o"   src="o-icon.png" />
+                <img class="x" name="x"  src="x-icon.png" />
+                <img class="o" name="o" src="o-icon.png" />
               </div>
               <div id="a2" class="col tic-tac-toe" >
-                <img class="x"   src="x-icon.png" />
-                <img class="o"   src="o-icon.png" />
+                <img class="x" name="x"  src="x-icon.png" />
+                <img class="o" name="o" src="o-icon.png" />
               </div>
             </div>
             <div class="row" >
               <div id="b0" class="col tic-tac-toe">
-                <img class="x"   src="x-icon.png" />
-                <img class="o"   src="o-icon.png" />
+                <img class="x" name="x"  src="x-icon.png" />
+                <img class="o" name="o" src="o-icon.png" />
               </div>
               <div id="b1" class="col tic-tac-toe" >
-                <img class="x"   src="x-icon.png" />
-                <img class="o"   src="o-icon.png" />
+                <img class="x" name="x"  src="x-icon.png" />
+                <img class="o" name="o" src="o-icon.png" />
               </div>
               <div id="b2" class="col tic-tac-toe" >
-                <img class="x"   src="x-icon.png" />
-                <img class="o"   src="o-icon.png" />
+                <img class="x" name="x"  src="x-icon.png" />
+                <img class="o" name="o" src="o-icon.png" />
               </div>
             </div>
             <div class="row" >
               <div id="c0" class="col tic-tac-toe">
-                <img class="x"   src="x-icon.png" />
-                <img class="o"   src="o-icon.png" />
+                <img class="x" name="x"  src="x-icon.png" />
+                <img class="o" name="o" src="o-icon.png" />
               </div>
               <div id="c1" class="col tic-tac-toe" >
-                <img class="x"   src="x-icon.png" />
-                <img class="o"   src="o-icon.png" />
+                <img class="x" name="x"  src="x-icon.png" />
+                <img class="o" name="o" src="o-icon.png" />
               </div>
               <div id="c2" class="col tic-tac-toe" >
-                <img class="x"   src="x-icon.png" />
-                <img class="o"   src="o-icon.png" />
+                <img class="x" name="x"  src="x-icon.png" />
+                <img class="o" name="o" src="o-icon.png" />
               </div>
             </div>
 
         </div>
 
-        <div id="playersScore"   class="col-sm text-center" >
+        <div id="playersScore" hidden  class="col-sm text-center" >
           <div class="container">
             <h2>Current Stats</h2>
-            <table class="table">
+            <table class="table" id="statsTable">
               <thead>
                 <tr>
                   <th></th>
@@ -106,27 +106,28 @@
                   <th>Vicotries</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <td><i class="golden-star fas fa-star"></i></td>
-                  <td>Mario </td>
-                  <td>3</td>
+              <tbody id="statsTableBody">
+                <tr >
+                  <td class="star"></td>
+                  <!-- <i class="golden-star fas fa-star"></i> -->
+                  <td> </td>
+                  <td></td>
                 </tr>
                 <tr>
+                  <td class="star"></td>
                   <td></td>
-                  <td>Juan</td>
-                  <td>2</td>
+                  <td></td>
                 </tr>
                 <tr>
                   <td></td>
                   <th>Match Draws:</th>
-                  <td>3</td>
+                  <td></td>
                 </tr>
               </tbody>
 
             </table>
           </div>
-          <button type="button" name="button">Reset Match Stats</button>
+          <button type="button" class="btn btn-outline-danger" name="button">Restart Match Stats <i class=" fas fa-power-off"></i></button>
         </div>
 
       </div>
