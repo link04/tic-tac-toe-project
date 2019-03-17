@@ -1,20 +1,25 @@
 
 html, body {
+  overflow-x: hidden;
 
-    overflow-x: hidden;
+   background-image: url("tic-tac-toe.jpg");
 }
 
+h1 , h2, h3 , h4 {
+  padding: 0 !important;
+  margin: 0 !important;
+}
 .title-div {
-  background:red;
+  /* background:red; */
   min-height: 20vh;
 }
 .game-div {
-  background:green;
+  /* background:green; */
   height: 65vh;
   width: 70vh;
 }
 .bottom-div {
-  background:blue;
+  /* background:blue; */
   min-height: 15vh;
 }
 
@@ -28,8 +33,7 @@ div.game-div div.row {
 }
 
 div.game-div div.row  div{
-  border: 1px solid black;
-
+  /* border: 1px solid black; */
 }
 @keyframes changesOpacityX {
   from {
@@ -49,10 +53,19 @@ div.game-div div.row  div{
     opacity:0.9;
   }
 }
-
+div.game-div img {
+  top: 25px;
+  left: 25px;
+  max-width:90%;
+  max-height:90%;
+  position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%, -50%);
+}
 div.game-div div.row img.x{
     filter: brightness(70%);
-    position: absolute;
+      z-index: 1;
     cursor: pointer;
     animation-duration: 1.8s;
    animation-name: changesOpacityX;
@@ -62,7 +75,7 @@ div.game-div div.row img.x{
 
 div.game-div div.row img.o{
   filter: brightness(70%);
-    position: absolute;
+  z-index: 3;
     cursor: pointer;
     animation-duration: 1.8s;
    animation-name: changesOpacityO;
@@ -72,14 +85,25 @@ div.game-div div.row img.o{
 
 .choosen{
     opacity:1;
-    position: absolute;
+  position: absolute;
 }
 
 .not-choosen{
     opacity:0;
 }
 
-
 div#gameDiv .row {
   display:none;
+}
+
+@media screen and (max-width: 480px) {
+    img {
+       width: 100px;
+    }
+}
+
+/* golden star and table css */
+
+.golden-star{
+  color:#ffd700;
 }

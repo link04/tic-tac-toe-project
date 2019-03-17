@@ -6,96 +6,135 @@
     <title>Tik Tak Tok</title>
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
   <body class="bg-light ">
 
-      <div class="title-div text-center ">
-        bottom div
+      <div class="row title-div ">
+        <div class=" mx-auto ">
+          <br>
+          <h1>M-Tic A-Tac O-Toe</h1>
+        </div>
+
       </div>
 
-      <div class="  row align-items-center">
-        <div id="actualPlayer" hidden class="col-sm text-center " >
+      <div class="row align-items-center ">
+        <div id="actualPlayer" hidden class="col-sm text-center" >
 
-          <div class="col-sm">
-            <h2>Actual Player is </h2>
-            <img class="x" id="x" hidden style="max-width:90%;max-height:90%;"  src="x-icon.png" />
-            <img class="o" id="o" hidden style="max-width:90%;max-height:90%;"  src="o-icon.png" />
+          <div class="">
+            <h2 id="actualPlayerHeader"></h2>
+            <img class="x" id="x" hidden   src="x-icon.png" />
+            <img class="o" id="o" hidden   src="o-icon.png" />
           </div>
 
         </div>
 
-        <div id="gameDiv" class="game-div mx-auto " style="padding:0px;">
-          <div class="container text-center" id="form-div">
-            <form class="form" id="myForm"  method="post">
-              <h2>Choose Letter</h2>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="xName">X</label>
-                  <input type="text" class="form-control" id="xName" placeholder="X Name" required>
+        <div id="gameDiv" class="col-sm  game-div  mx-auto" >
+          <div class="col-6 mx-auto">
+            <div class="text-center" id="form-div">
+              <form class="form" id="myForm"  method="post">
+                <h2>Choose Letter</h2>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="xName">X</label>
+                    <input type="text" class="form-control" id="xName" placeholder="X Name" required >
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="oName">O</label>
+                    <input type="text" class="form-control" id="oName" placeholder="O Name" required >
+                  </div>
                 </div>
-                <div class="form-group col-md-6">
-                  <label for="oName">O</label>
-                  <input type="text" class="form-control" id="oName" placeholder="O Name" required>
-                </div>
-              </div>
-              <input type="submit" class="btn btn-primary" value="Begin!">
+                <input type="submit" class="btn btn-primary" value="Begin!">
 
-            </form>
+              </form>
+            </div>
           </div>
 
             <div class="row" >
-              <div id="a0" class="col-sm">
-                <img class="x" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
-                <img class="o" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
+              <div id="a0" class="col tic-tac-toe">
+                <img class="x"   src="x-icon.png" />
+                <img class="o"   src="o-icon.png" />
               </div>
-              <div id="a1" class="col-sm" >
-                <img class="x" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
-                <img class="o" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
+              <div id="a1" class="col tic-tac-toe" >
+                <img class="x"   src="x-icon.png" />
+                <img class="o"   src="o-icon.png" />
               </div>
-              <div id="a2" class="col-sm" >
-                <img class="x" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
-                <img class="o" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
-              </div>
-            </div>
-            <div class="row" >
-              <div id="b0" class="col-sm">
-                <img class="x" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
-                <img class="o" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
-              </div>
-              <div id="b1" class="col-sm" >
-                <img class="x" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
-                <img class="o" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
-              </div>
-              <div id="b2" class="col-sm" >
-                <img class="x" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
-                <img class="o" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
+              <div id="a2" class="col tic-tac-toe" >
+                <img class="x"   src="x-icon.png" />
+                <img class="o"   src="o-icon.png" />
               </div>
             </div>
             <div class="row" >
-              <div id="c0" class="col-sm">
-                <img class="x" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
-                <img class="o" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
+              <div id="b0" class="col tic-tac-toe">
+                <img class="x"   src="x-icon.png" />
+                <img class="o"   src="o-icon.png" />
               </div>
-              <div id="c1" class="col-sm" >
-                <img class="x" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
-                <img class="o" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
+              <div id="b1" class="col tic-tac-toe" >
+                <img class="x"   src="x-icon.png" />
+                <img class="o"   src="o-icon.png" />
               </div>
-              <div id="c2" class="col-sm" >
-                <img class="x" style="max-width:90%;max-height:90%;"  src="x-icon.png" />
-                <img class="o" style="max-width:90%;max-height:90%;"  src="o-icon.png" />
+              <div id="b2" class="col tic-tac-toe" >
+                <img class="x"   src="x-icon.png" />
+                <img class="o"   src="o-icon.png" />
+              </div>
+            </div>
+            <div class="row" >
+              <div id="c0" class="col tic-tac-toe">
+                <img class="x"   src="x-icon.png" />
+                <img class="o"   src="o-icon.png" />
+              </div>
+              <div id="c1" class="col tic-tac-toe" >
+                <img class="x"   src="x-icon.png" />
+                <img class="o"   src="o-icon.png" />
+              </div>
+              <div id="c2" class="col tic-tac-toe" >
+                <img class="x"   src="x-icon.png" />
+                <img class="o"   src="o-icon.png" />
               </div>
             </div>
 
         </div>
 
-        <div id="playersScore" hidden  class="col-sm text-center" >
+        <div id="playersScore"   class="col-sm text-center" >
+          <div class="container">
+            <h2>Current Stats</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Players</th>
+                  <th>Vicotries</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><i class="golden-star fas fa-star"></i></td>
+                  <td>Mario </td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Juan</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <th>Match Draws:</th>
+                  <td>3</td>
+                </tr>
+              </tbody>
+
+            </table>
+          </div>
+          <button type="button" name="button">Reset Match Stats</button>
+        </div>
+
+      </div>
+
+      <div class="row bottom-div ">
+        <div class="mx-auto">
           bottom div
         </div>
-
-      </div>
-
-      <div class="bottom-div text-center">
-        bottom div
       </div>
 
   </body>
