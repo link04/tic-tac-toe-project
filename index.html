@@ -7,15 +7,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-
-    <title>Sticky Footer Navbar Template for Bootstrap</title>
+    <title>M-Tic A-Tac X-Toe</title>
+    <link rel="icon" href="images/favicon.ico">
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Custom styles for this template -->
-    <link href="style2.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style2.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
   </head>
 
@@ -23,7 +23,7 @@
 
     <header class="pb-5">
       <!-- Fixed navbar -->
-      <nav class="navbar navbar-expand-md  fixed-top  mx-auto ">
+      <nav class="navbar navbar-expand-md    mx-auto ">
         <div class="mx-auto">
           <h2>M-Tic A-Tac X-Toe</h2>
         </div>
@@ -36,8 +36,8 @@
         <div id="actualPlayer" hidden class="col-sm text-center" >
           <div class="">
             <h2 id="actualPlayerHeader"></h2>
-            <img class="x" id="x" hidden   src="x-icon.png" />
-            <img class="o" id="o" hidden   src="o-icon.png" />
+            <img class="x" id="x" hidden   src="images/x-icon.png" />
+            <img class="o" id="o" hidden   src="images/o-icon.png" />
           </div>
         </div>
 
@@ -50,11 +50,11 @@
                   <div class="form-row">
                     <div class="form-group col-md-6">
                       <label for="xName">X</label>
-                      <input type="text" class="form-control" id="xName" placeholder="X Name" required >
+                      <input type="text" class="form-control" id="xName" placeholder="X Name" required autocomplete="off" >
                     </div>
                     <div class="form-group col-md-6">
                       <label for="oName">O</label>
-                      <input type="text" class="form-control" id="oName" placeholder="O Name" required >
+                      <input type="text" class="form-control" id="oName" placeholder="O Name" required autocomplete="off" >
                     </div>
                   </div>
                    <button type="submit" class="btn btn-primary" >
@@ -66,44 +66,44 @@
 
             <div class="row" >
               <div id="a0" class="col tic-tac-toe " data-name="letterDiv">
-                <img class="x" name="x"  src="x-icon.png" />
-                <img class="o" name="o" src="o-icon.png" />
+                <img class="x" name="x"  src="images/x-icon.png" />
+                <img class="o" name="o" src="images/o-icon.png" />
               </div>
               <div id="a1" class="col tic-tac-toe border-top-0 border" data-name="letterDiv">
-                <img class="x" name="x"  src="x-icon.png" />
-                <img class="o" name="o" src="o-icon.png" />
+                <img class="x" name="x"  src="images/x-icon.png" />
+                <img class="o" name="o" src="images/o-icon.png" />
               </div>
               <div id="a2" class="col tic-tac-toe " data-name="letterDiv">
-                <img class="x" name="x"  src="x-icon.png" />
-                <img class="o" name="o" src="o-icon.png" />
+                <img class="x" name="x"  src="images/x-icon.png" />
+                <img class="o" name="o" src="images/o-icon.png" />
               </div>
             </div>
             <div class="row" >
               <div id="b0" class="col tic-tac-toe border-left-0 border" data-name="letterDiv">
-                <img class="x" name="x"  src="x-icon.png" />
-                <img class="o" name="o" src="o-icon.png" />
+                <img class="x" name="x"  src="images/x-icon.png" />
+                <img class="o" name="o" src="images/o-icon.png" />
               </div>
               <div id="b1" class="col tic-tac-toe border " data-name="letterDiv">
-                <img class="x" name="x"  src="x-icon.png" />
-                <img class="o" name="o" src="o-icon.png" />
+                <img class="x" name="x"  src="images/x-icon.png" />
+                <img class="o" name="o" src="images/o-icon.png" />
               </div>
               <div id="b2" class="col tic-tac-toe border-right-0 border" data-name="letterDiv">
-                <img class="x" name="x"  src="x-icon.png" />
-                <img class="o" name="o" src="o-icon.png" />
+                <img class="x" name="x"  src="images/x-icon.png" />
+                <img class="o" name="o" src="images/o-icon.png" />
               </div>
             </div>
             <div class="row" >
               <div id="c0" class="col tic-tac-toe " data-name="letterDiv">
-                <img class="x" name="x"  src="x-icon.png" />
-                <img class="o" name="o" src="o-icon.png" />
+                <img class="x" name="x"  src="images/x-icon.png" />
+                <img class="o" name="o" src="images/o-icon.png" />
               </div>
               <div id="c1" class="col tic-tac-toe border-bottom-0 border" data-name="letterDiv">
-                <img class="x" name="x"  src="x-icon.png" />
-                <img class="o" name="o" src="o-icon.png" />
+                <img class="x" name="x"  src="images/x-icon.png" />
+                <img class="o" name="o" src="images/o-icon.png" />
               </div>
               <div id="c2" class="col tic-tac-toe " data-name="letterDiv">
-                <img class="x" name="x"  src="x-icon.png" />
-                <img class="o" name="o" src="o-icon.png" />
+                <img class="x" name="x"  src="images/x-icon.png" />
+                <img class="o" name="o" src="images/o-icon.png" />
               </div>
             </div>
 
@@ -154,13 +154,13 @@
         <div class="row  ">
 
           <!-- Grid column -->
-          <div id="footerInfo" class="col-md-6 mt-md-0 mt-3 ml-9 m-5 p-2">
+          <!-- <div id="footerInfo" class="col-md-6 mt-md-0 mt-3 ml-9 m-5 p-2">
 
             <!-- Content -->
-            <h5 class="text-uppercase">M-Tic A-Tac X-Toe</h5>
+            <!-- <h5 class="text-uppercase">M-Tic A-Tac X-Toe</h5>
             <p>Developed by Maximo Bautista with some help of Boostrap and FontAwesome.</p>
 
-          </div>
+          </div> -->
           <!-- Grid column -->
 
           <hr class="clearfix w-100 d-md-none pb-3">
@@ -169,8 +169,9 @@
 
           <div class="col-md-3 mb-md-0 mb-3 text-center">
             <ul class="list-inline menu simple ">
-              <li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/maximo-alexander-bautista-480786a6/"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
               <li class="list-inline-item"><a target="_blank" href="https://github.com/link04"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+              <li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/maximo-alexander-bautista-480786a6/"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+              <li class="list-inline-item"><a target="_blank" href="https://medium.com/@max.bautista97"> <i class="fab fa-medium-m" aria-hidden="true"></i> </a></li>
               <li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/maximo.bautista.777"> <i class="fab fa-facebook-f" aria-hidden="true"></i> </a></li>
             </ul>
           </div>
@@ -194,6 +195,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script type="text/javascript" src="index.js" ></script>
+    <script type="text/javascript" src="src/index.js" ></script>
   </body>
 </html>

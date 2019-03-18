@@ -101,9 +101,7 @@ const findXarrayValues = (i) => {
 
 const findAmountOfMoves = () => {
   let moves = 0;
-
   ["a","b","c"].forEach(letter => moves += gameObject.gameArrays[letter].join('').length);
-
   return moves;
 }
 
@@ -249,12 +247,19 @@ const checkMatchStatus = () =>{
 
 document.querySelector("#myForm").addEventListener("submit", function(e){
   e.preventDefault();
-  gameObject.x.name = e.target.xName.value;
-  gameObject.o.name = e.target.oName.value;
-  e.target.parentElement.hidden = true;
-  swal( "Begin!" ,  `${gameObject.x.name} Vs ${gameObject.o.name}`,  "success" );
-  setTableData();
-  displayGameBoard();
+  const xName = e.target.xName.value;
+  const oName = e.target.oName.value;
+
+  if (xName === oName){
+    swal ('Wait a sec!', 'Names should be different!', 'warning');
+  } else {
+    gameObject.x.name = xName;
+    gameObject.o.name = oName;
+    e.target.parentElement.hidden = true;
+    swal( "Begin!" ,  `${gameObject.x.name} Vs ${gameObject.o.name}`,  "success" );
+    setTableData();
+    displayGameBoard();
+  }
 
 });
 

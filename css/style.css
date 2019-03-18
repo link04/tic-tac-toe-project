@@ -2,7 +2,7 @@
 html,body{
   /* overflow-x: hidden; */
   overflow-x:hidden;
-   background-image: url("tic-tac-toe.jpg");
+   background-image: url(../images/tic-tac-toe.jpg);
 }
 
 h1 , h2, h3 , h4 {
