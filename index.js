@@ -157,11 +157,11 @@ const setTableData = () => {
   trTags[2].children[2].innerText = gameObject.draws;
 
     if( gameObject.x.victories > gameObject.o.victories){
-
       trTags[0].children[0].innerHTML = `<i class="golden-star fas fa-star"></i>`;
-    } else if (  gameObject.x.victories < gameObject.o.victories) {
+    } else if (gameObject.x.victories < gameObject.o.victories) {
       trTags[1].children[0].innerHTML = `<i class="golden-star fas fa-star"></i>`;
     } else {
+      trTags[0].children[0].innerHTML = "";
       trTags[1].children[0].innerHTML = "";
     }
 
@@ -258,13 +258,13 @@ document.querySelector("#myForm").addEventListener("submit", function(e){
 
 });
 
-document.addEventListener('click',(event => {
+gameDiv.addEventListener('click',(event => {
 
       if(actualUser != null){
         let targetDiv;
-        if (event.target.parentElement.className == "col tic-tac-toe" ){
+        if (event.target.parentElement.dataset.name == "letterDiv" ){
           targetDiv = event.target.parentElement;
-        } else if (event.target.className == "col tic-tac-toe" ){
+        } else if (event.target.dataset.name == "letterDiv" ){
           targetDiv = event.target;
         }
         if (targetDiv != undefined) {
@@ -275,3 +275,5 @@ document.addEventListener('click',(event => {
         }
       }
     }));
+
+document.querySelector(".btn.btn-outline-danger").addEventListener('click',( () => restartMatchData()));

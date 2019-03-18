@@ -1,0 +1,65 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  min-height: 100%;
+   background-image: url("tic-tac-toe.jpg");
+}
+
+.footer {
+
+    bottom: 0;
+    color: white;
+    height: 100%;
+    left: 0;
+    position: relative; //changed to relative from fixed also works if position is not there
+    width:100%;
+
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 20px 15px 0;
+
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+
+}
+.footer #footerInfo {
+
+  background-color: #8a8a8a ;
+  color: #fefefe;
+  border-radius: 20px;
+
+
+
+}
+
+.footer i {
+
+  background-color: #8a8a8a ;
+  color: #fefefe;
+
+  padding: 20px;
+  border-radius: 50px;
+  text-decoration: none;
+
+  font-size: 1.3rem;
+  min-width:50px;
+}
+.footer i:hover {
+  color: #4a4a4a;
+  transition: color 0.3s ease-in;
+}
+
+
+
+code {
+  font-size: 80%;
+}
