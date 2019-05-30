@@ -28,6 +28,4 @@ This app is easy to deploy because it is only a client sided app with no backend
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
 * Javascript Arrays for inspiration
-* curiousness
