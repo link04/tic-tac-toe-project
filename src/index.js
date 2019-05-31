@@ -182,7 +182,23 @@ const restartBoardState = () => {
 
 const restartMatchData = () => {
 
-  gameObject = defaultGameObject;
+  gameObject = {
+    x:{
+      name:null,
+      victories:0
+    },
+    o:{
+      name:null,
+      victories:0
+    },
+    gameArrays:{
+      a:["", "", ""],
+      b:["", "", ""],
+      c:["", "", ""]
+    },
+    draws:0
+  };
+
   restartBoardState();
   gameDiv.querySelectorAll('.row').forEach(div => div.style.display = "none");
   hideSideDivs();
@@ -200,7 +216,6 @@ const gameEndBehavior = () => {
     }).then((value) => {
       switch (value) {
         case "continue":
-          swal("Great", "Will set up new match!", "success");
           restartBoardState();
           break;
 
@@ -218,7 +233,7 @@ const gameEndBehavior = () => {
     }).then((value) => {
       switch (value) {
         case "continue":
-          swal("Great", "Will set up new match!", "success");
+          // swal("Great", "Will set up new match!", "success");
           restartBoardState();
           break;
 
