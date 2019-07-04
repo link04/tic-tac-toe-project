@@ -6,6 +6,7 @@ html {
 }
 
 .footer {
+   padding-top: 15px;
 
     bottom: 0;
     color: white;
@@ -47,12 +48,15 @@ body > .container {
   color: #fefefe;
 
   padding: 20px;
+
   border-radius: 50px;
   text-decoration: none;
 
   font-size: 1.3rem;
   min-width:50px;
+
 }
+
 .footer i:hover {
   color: #4a4a4a;
   transition: color 0.3s ease-in;
