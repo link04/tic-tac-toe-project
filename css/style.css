@@ -3,16 +3,9 @@ html,body{
   /* overflow-x: hidden; */
   overflow-x:hidden;
    background-image: url(../images/tic-tac-toe.jpg);
+   min-height: 100vh;
 }
 
-h1 , h2, h3 , h4 {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-.title-div {
-  /* background:red; */
-  min-height: 20vh;
-}
 .game-div {
   /* background:green; */
   height: 65vh;
@@ -38,6 +31,7 @@ div.game-div div.row  div{
 
   /* border: 0.7px solid #656264; */
 }
+
 @keyframes changesOpacityX {
   from {
     opacity:0.9;
@@ -82,10 +76,6 @@ div.game-div div.row img.o{
   z-index: 3;
   cursor: pointer;
   opacity:0;
-  /* animation-duration: 1.8s;
-  animation-name: changesOpacityO;
-  animation-iteration-count: infinite;
-  animation-direction: alternate; */
 }
 
 .choosen{
