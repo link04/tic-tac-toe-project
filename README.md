@@ -14,7 +14,7 @@ For this HTML, CSS and Javascript project all you need to do is clone this repo 
 
 ## Deployment
 
-This app is easy to deploy because it is only a client sided app with no backend on it, mine is actually deployed on Github Pages with https://pages.github.com/, live example of the app https://link04.github.io/tic-tac-toe-project/
+This app is easy to deploy because it is only a client side app with no backend on it, mine is actually deployed on Github Pages with https://pages.github.com/, live example of the app https://link04.github.io/tic-tac-toe-project/
 
 ## Built With
 

@@ -7,23 +7,6 @@ let winner = false;
 let draw = false;
 let actualUser = null;
 
-const defaultGameObject = {
-  x:{
-    name:null,
-    victories:0
-  },
-  o:{
-    name:null,
-    victories:0
-  },
-  gameArrays:{
-    a:["", "", ""],
-    b:["", "", ""],
-    c:["", "", ""]
-  },
-  draws:0
-};
-
 let gameObject = {
   x:{
     name:null,
@@ -79,7 +62,7 @@ const displayGameBoard = () => {
 }
 
 // Need to remane this functuons to correct way
-const findXarrayValues = (i) => {
+const findDiagonalArrayValues = (i) => {
   let valuesString;
 
   if(i == 0){
@@ -95,7 +78,6 @@ const findXarrayValues = (i) => {
     return value;
     }).join('');
   }
-
   return valuesString;
 }
 
@@ -111,8 +93,8 @@ const savePlayerInput = (divIdArray) => {
 
   const lastMoveArrayHor = gameObject.gameArrays[divIdArray[0]].join('');
   const lastMoveArrayVert = Array.from("abc", key => gameObject.gameArrays[key][divIdArray[1]]).join('');
-  const arrayAdecending = findXarrayValues(0);
-  const arrayAacending = findXarrayValues(2);
+  const arrayAdecending = findDiagonalArrayValues(0);
+  const arrayAacending = findDiagonalArrayValues(2);
 
   if(lastMoveArrayHor.length == 3 || lastMoveArrayVert.length == 3 || arrayAdecending.length == 3 ||arrayAacending.length == 3){
     checkForWinnerArray(lastMoveArrayHor);
@@ -166,11 +148,11 @@ const setTableData = () => {
 }
 
 const restartBoardState = () => {
-  delete gameObject.gameArrays;
-  gameObject.gameArrays = {
-    a:["", "", ""],
-    b:["", "", ""],
-    c:["", "", ""]
+  gameObject = {...gameObject, gameArrays: {
+      a:["", "", ""],
+      b:["", "", ""],
+      c:["", "", ""]
+    }
   }
   gameDiv.querySelectorAll('.row img').forEach(img => {
     img.hidden = false;
