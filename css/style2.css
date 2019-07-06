@@ -41,7 +41,7 @@ body > .container {
   color: #fefefe;
 }
 
-.footer i:hover {
+.footer a:hover {
   color: #4a4a4a;
   transition: color 0.3s ease-in;
 }
